@@ -1,6 +1,7 @@
 package com.cooler.ai.platform.client.biz;
 
 import com.cooler.ai.nlg.NlgConstant;
+import com.cooler.ai.nlg.entity.NlgTemplateInfo;
 import com.cooler.ai.nlg.facade.NlgFacade;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -37,7 +38,8 @@ public class BizDataClient {
         paramKvs.put("placeName", "中关村");                             //placeName和person为模板变量值，用来替代模板中的变量
         paramKvs.put("person", "张三");
 
-        String nlgSentence = nlgFacade.getNlgSentence(dmName, actionName, transformIntentName, intentName, paramKvs, NlgConstant.V_DEFAULT_THEME);
+        NlgTemplateInfo nlgTemplateInfo = nlgFacade.getNlgSentence(dmName, actionName, transformIntentName, intentName, paramKvs, NlgConstant.V_DEFAULT_THEME);
+        String nlgSentence =nlgTemplateInfo.getNlgTemplate();
 
         System.out.println(nlgSentence);
     }

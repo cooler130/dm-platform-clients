@@ -34,7 +34,7 @@
 
         <dependency>
             <groupId>com.cooler.ai.nlg</groupId>
-            <artifactId>nlg-recommend-protocol</artifactId>
+            <artifactId>nlg-guide-protocol</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
