@@ -26,11 +26,11 @@ public class Callout {
             "嗯，再见"
     };
 
-    static String[] answers3 = {
-            "没兴趣",                              //此处"没兴趣"作为unknown_intent处理
-            "没兴趣",
-            "嗯，再见"
-    };
+//    static String[] answers3 = {
+//            "没兴趣",                              //此处"没兴趣"作为unknown_intent处理
+//            "没兴趣",
+//            "嗯，再见"
+//    };
 
     static String[] answers4 = {
             "喂喂",
@@ -68,7 +68,7 @@ public class Callout {
     public static Map<String, String[]> querysGroup = new HashMap<String, String[]>() {{
         put("正常流程", answers1);
         put("拒绝流程", answers2);
-        put("两次拒绝意图", answers3);
+//        put("两次拒绝意图", answers3);
         put("连续重复", answers4);
         put("超时", answers5);
         put("拒绝+开车（转义能力）", answers6);

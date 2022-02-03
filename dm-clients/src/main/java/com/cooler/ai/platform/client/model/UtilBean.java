@@ -45,7 +45,7 @@ public class UtilBean {
     public static DMRequest createDmRequest(String sessionId, String queryType, String query) {
         DMRequest dmRequest = new DMRequest();
 
-        dmRequest.setDebugModel(true);                                          //ture：调试模式； false：非调试模式（正式，默认）
+        dmRequest.setDebugModel(Constant.MODEL_RDB);                                          //RDB作为调试模式
 
         ClientInfo clientInfo = new ClientInfo();
         clientInfo.setChannel("000");

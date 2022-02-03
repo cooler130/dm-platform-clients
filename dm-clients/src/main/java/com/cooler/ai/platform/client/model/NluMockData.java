@@ -65,6 +65,17 @@ public class NluMockData {
 
             put("你多大了",     createDomainInfo("你多大了", "no_domain", "how_old", 1.0, null, null));
 
+
+            //burouter
+//            put("我的红包怎么用不了啊？",     createDomainInfo("我的红包怎么用不了啊？", "burouter", "express_question", 1.0, null, null));
+//            put("我的红包呢？",             createDomainInfo("我的红包呢？",         "burouter", "unknown_intent", 1.0, null, null));
+//            put("不是",                    createDomainInfo("不是",                "burouter", "negative", 1.0, null, null));
+//            put("都不是",                  createDomainInfo("都不是",                "burouter", "negative", 1.0, null, null));
+//            put("是的",                    createDomainInfo("是的",                "burouter", "positive", 1.0, null, null));
+//            put("电影",                    createDomainInfo("电影",                "burouter", "express_business", 1.0, null, null));
+//            put("第二个",                  createDomainInfo("第二个",                "burouter", "select", 1.0, new String[]{"option_number"}, new String[]{"2"}));
+//            put("转人工",                  createDomainInfo("转人工",                "burouter", "people_service", 1.0, null, null));
+
         }
     };
 

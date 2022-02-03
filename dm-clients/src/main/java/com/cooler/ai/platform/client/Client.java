@@ -1,6 +1,7 @@
 package com.cooler.ai.platform.client;
 
 import com.cooler.ai.platform.client.model.UtilBean;
+import com.cooler.ai.platform.client.testcase.BuRouter;
 import com.cooler.ai.platform.client.testcase.Callout;
 import com.cooler.ai.platform.client.testcase.Waimai;
 import com.cooler.ai.platform.facade.DistributionCenterFacade;
@@ -22,7 +23,7 @@ public class Client {
     private static final Logger logger = LoggerFactory.getLogger(Client.class);
     private static DistributionCenterFacade distributionCenterFacade;
 
-    private static String selectBot = "callout";
+    private static String selectBot = "waimai";
 
     public static void main(String args[]){
         String initQuery = null;
@@ -36,6 +37,11 @@ public class Client {
             case "callout" : {
                 initQuery = "signal->callout|no_intent|surveys|#signal#:init";
                 querysGroup = Callout.querysGroup;
+                break;
+            }
+            case "burouter" : {
+                initQuery = "signal->burouter|no_intent|bu_route|#signal#:init";
+                querysGroup = BuRouter.querysGroup;
                 break;
             }
         }
